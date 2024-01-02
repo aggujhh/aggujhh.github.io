@@ -126,7 +126,6 @@ var movie2 = document.querySelector('.movie2');
 var movie3 = document.querySelector('.movie3');
 var movie4 = document.querySelector('.movie4');
 var movie5 = document.querySelector('.movie5');
-var movie6 = document.querySelector('.movie6');
 function playVideo() {
     if (index === 0) {
         movie1.style.display = 'block';
@@ -144,8 +143,8 @@ function playVideo() {
         movie5.style.display = 'block';
         movie5.src += "&autoplay=1";
     } else if (index === 5) {
-        movie6.style.display = 'block';
-        movie6.src += "&autoplay=1";
+        movie1.style.display = 'block';
+        movie1.src += "&autoplay=1";
     }
 
 }
@@ -169,6 +168,4 @@ close.addEventListener("click", () => {
     movie4.src = movie4.src.replace("&autoplay=1", "");
     movie5.style.display = 'none';
     movie5.src = movie5.src.replace("&autoplay=1", "");
-    movie6.style.display = 'none';
-    movie6.src = movie5.src.replace("&autoplay=1", "");
 });

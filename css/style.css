@@ -1059,8 +1059,7 @@ video::-webkit-media-controls-panel {
 .movie2,
 .movie3,
 .movie4,
-.movie5,
-.movie6 {
+.movie5 {
     position: fixed;
     min-height: 100%;
     min-width: 100%;
