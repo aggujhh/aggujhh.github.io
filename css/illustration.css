@@ -1,0 +1,351 @@
+.illustration {
+    position: relative;
+    width: 100%;
+    height: 130vh;
+    color: #fff;
+    overflow: hidden;
+}
+
+@keyframes floatUpDown {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(30px);
+        /* 向上移动20像素 */
+    }
+}
+
+
+.click {
+    position: absolute;
+    top: 30%;
+    left: 45%;
+    animation: floatUpDown 2s ease-in-out infinite;
+}
+
+.click>p {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.illustration_images {
+    position: relative;
+    width: 100%;
+    top: 20vh;
+    height: 80vh;
+}
+
+.illustration_img {
+    position: absolute;
+    background-color: grey;
+    border-radius: 3px;
+    transition: transform 500ms ease-in-out;
+    box-shadow: 0px 0px 10px 2px rgba(255, 255, 255, .4);
+    transition: 1S;
+    cursor: pointer;
+}
+
+.illustration_img:hover {
+    transform: scale(1.5) rotate(0deg);
+    box-shadow: 0px 0px 50px 2px rgba(255, 255, 255, .4);
+    z-index: 4;
+}
+
+.illustration_img1 {
+    aspect-ratio: 2/3;
+    width: 15vw;
+    transform: rotate(14deg);
+    background-color: #444444;
+    top: 40%;
+    left: 40%;
+    z-index: 3;
+}
+.illustration_img>div{
+    position: absolute;
+    height: 85%;
+    width: 90%;
+    top: 3%;
+    left: 5%;   
+}
+.illustration_img1>div{
+    background-image: url("../img/illustration_img1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 40% center;
+}
+
+.illustration_img2 {
+    aspect-ratio: 2/3;
+    width: 15vw;
+    transform: rotate(8deg);
+    top: 13%;
+    left: 45%;
+    z-index: 2;
+}
+.illustration_img2>div{
+    background-image: url("../img/illustration_img2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 40% center;
+}
+
+/* .illustration_img3 {
+    aspect-ratio: 2/3;
+    width: 15vw;
+    transform: rotate(-10deg);
+    top: 25.3%;
+    left: 62.5%;
+    z-index: 2;
+}
+.illustration_img3>div{
+    background-image: url("../img/illustration_img3.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 40% center;
+} */
+
+.illustration_img4 {
+    aspect-ratio: 2/3;
+    width: 15vw;
+    transform: rotate(25deg);
+    top: 46.1%;
+    left: 58%;
+    z-index: 2;
+}
+.illustration_img4>div{
+    background-image: url("../img/illustration_img13.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 40% center;
+}
+
+.illustration_img5 {
+    aspect-ratio: 2/3;
+    width: 15vw;
+    transform: rotate(6deg);
+    top: 68%;
+    left: 69%;
+    z-index: 2;
+}
+.illustration_img5>div{
+    background-image: url("../img/illustration_img5.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 40% center;
+}
+
+.illustration_img6 {
+    aspect-ratio: 2/3;
+    width: 15vw;
+    transform: rotate(40deg);
+    top: 78%;
+    left: 57%;
+    z-index: 2;
+}
+.illustration_img6>div{
+    background-image: url("../img/illustration_img6.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 40% center;
+}
+
+.illustration_img7 {
+    aspect-ratio: 2/3;
+    width: 15vw;
+    transform: rotate(-20deg);
+    top: 74.8%;
+    left: 41.5%;
+    z-index: 2;
+}
+.illustration_img7>div{
+    background-image: url("../img/illustration_img7.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 40% center;
+}
+
+.illustration_img8 {
+    aspect-ratio: 2/3;
+    width: 15vw;
+    transform: rotate(-5deg);
+    top: 52.6%;
+    left: 29.5%;
+    z-index: 2;
+}
+.illustration_img8>div{
+    background-image: url("../img/illustration_img8.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 40% center;
+}
+.illustration_img9 {
+    aspect-ratio: 2/3;
+    width: 15vw;
+    transform: rotate(-14deg);
+    top: 8.5%;
+    left: 30.7%;
+    z-index: 2;
+}
+.illustration_img9>div{
+    background-image: url("../img/illustration_img9.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 40% center;
+}
+.illustration_img10 {
+    aspect-ratio: 2/3;
+    width: 15vw;
+    transform: rotate(12deg);
+    background-color: silver;
+    top: 4%;
+    left: 59%;
+    z-index: 1;
+}
+.illustration_img10>div{
+    background-image: url("../img/illustration_img10.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 40% center;
+}
+
+.illustration_img11 {
+    aspect-ratio: 2/3;
+    width: 15vw;
+    transform: rotate(12deg);
+    background-color: silver;
+    top: 20%;
+    left: 74.5%;
+    z-index: 1;
+}
+.illustration_img11>div{
+    background-image: url("../img/illustration_img11.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 40% center;
+}
+
+.illustration_img12 {
+    aspect-ratio: 2/3;
+    width: 15vw;
+    transform: rotate(-5deg);
+    background-color: silver;
+    top: 50%;
+    left: 76.5%;
+    z-index: 1;
+}
+.illustration_img12>div{
+    background-image: url("../img/illustration_img12.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 40% center;
+}
+
+/* .illustration_img13 {
+    aspect-ratio: 2/3;
+    width: 15vw;
+    transform: rotate(-5deg);
+    background-color: silver;
+    top: 83%;
+    left: 66.5%;
+    z-index: 1;
+}
+.illustration_img13>div{
+    background-image: url("../img/illustration_img13.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 40% center;
+} */
+
+.illustration_img14 {
+    aspect-ratio: 2/3;
+    width: 15vw;
+    transform: rotate(-23deg);
+    background-color: silver;
+    top: 77.5%;
+    left: 8.2%;
+    z-index: 1;
+}
+.illustration_img14>div{
+    background-image: url("../img/illustration_img14.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 40% center;
+}
+
+.illustration_img15 {
+    aspect-ratio: 2/3;
+    width: 15vw;
+    transform: rotate(-30deg);
+    background-color: silver;
+    top: 86.5%;
+    left: 25.5%;
+    z-index: 1;
+}
+.illustration_img15>div{
+    background-image: url("../img/illustration_img15.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 40% center;
+}
+/* .illustration_img16 {
+    aspect-ratio: 2/3;
+    width: 15vw;
+    transform: rotate(19deg);
+    background-color: silver;
+    top: 81.5%;
+    left: 19.5%;
+    z-index: 1;
+}
+.illustration_img16>div{
+    background-image: url("../img/illustration_img16.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 40% center;
+} */
+.illustration_img17 {
+    aspect-ratio: 2/3;
+    width: 15vw;
+    transform: rotate(15deg);
+    background-color: silver;
+    top: 20.5%;
+    left: 13%;
+    z-index: 1;
+}
+.illustration_img17>div{
+    background-image: url("../img/illustration_img17.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 40% center;
+}
+.illustration_img18 {
+    aspect-ratio: 2/3;
+    width: 15vw;
+    transform: rotate(-8deg);
+    background-color: silver;
+    top: 46%;
+    left: 11.2%;
+    z-index: 1;
+}
+.illustration_img18>div{
+    background-image: url("../img/illustration_img18.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 40% center;
+}
+
+.floor{
+    position: absolute;
+    width: 90%;
+    height: 5vh;
+    left: 5%;
+    bottom: 0;
+    background:white ;
+    box-shadow: 0px 0px 10px 2px rgba(255, 255, 255, .4);
+    z-index: 99;
+
+}

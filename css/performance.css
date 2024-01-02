@@ -1,0 +1,190 @@
+@font-face {
+    font-family: KodomoRounded;
+    src: url(../font/KodomoRounded.otf);
+}
+
+.performance {
+    position: relative;
+    width: 100%;
+    height: 150vh;
+    color: #fff;
+    overflow: hidden;
+
+}
+
+.face {
+    position: absolute;
+    top: 20vh;
+    left: 10vw;
+    overflow: hidden;
+}
+
+.face img {
+    height: 250px;
+}
+
+.glasses {
+    position: absolute;
+    height: 100px;
+    width: 200px;
+    top: -25px;
+    right: 50px;
+    animation: slideInOut 6s cubic-bezier(0.645, 0.045, 0.355, 1) infinite;
+    transform: translateY(-60vh);
+}
+
+.glasses:nth-of-type(2) {
+    animation-delay: -1.8s
+}
+
+.glasses:nth-of-type(3) {
+    animation-delay: -0.25s
+}
+
+.glasses:nth-of-type(4) {
+    animation-delay: 1.25s
+}
+
+.glasses:nth-of-type(5) {
+    animation-delay: 2.65s
+}
+
+@keyframes slideInOut {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%)rotate(8deg);
+    }
+
+    5% {
+        opacity: 1;
+    }
+
+    20% {
+        transform: translateX(0)rotate(8deg);
+        opacity: 1;
+    }
+
+    35% {
+        transform: translateX(0)rotate(8deg);
+        opacity: 1;
+    }
+
+    45% {
+        transform: translateY(100%)rotate(8deg);
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-100%)rotate(8deg);
+    }
+}
+
+.face_title {
+    position: absolute;
+    height: 50px;
+    top: 25vh;
+    left: 35%;
+    font-size: 6em;
+    color: #f3abc6;
+    /* white-space: nowrap; */
+    font-family: KodomoRounded;
+    filter: drop-shadow(0 0 1px #fff) drop-shadow(0 0 2px #fff) drop-shadow(0 0 3px #fff) drop-shadow(0 0 4px #fff) drop-shadow(0 0 5px #fff);
+
+    /* text-shadow: -1px -1px 0 #fff,
+        1px -1px 0 #fff,
+        -1px 1px 0 #fff,
+        1px 1px 0 #fff; */
+}
+.face_title>span1{
+    font-size: 0.5em;
+    font-family: KodomoRounded;
+}
+.face_title>span2{
+    font-size: 1.5em;
+    font-family: KodomoRounded;
+}
+
+
+
+.swiper {
+    position: absolute;
+    top: 45%;
+    left: 10vw;
+    width: 80vw;
+    height: 200px;
+    overflow: hidden;
+}
+
+/*自动播放*/
+.swiper .swiper-wrapper {
+    margin-left: -660px;
+    animation: swiperAnim 6s linear infinite;
+    padding: 0;
+    width: 3000px;
+    height: 100%;
+}
+
+.swiper li {
+    float: left;
+    width: 200px;
+    margin-left: 20px;
+    list-style: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.swiper2 li img,
+.swiper li img {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+}
+
+/*动画*/
+@keyframes swiperAnim {
+    0% {
+        margin-left: -220px;
+    }
+
+    100% {
+        margin-left: -1320px;
+    }
+}
+
+.swiper2 {
+    position: absolute;
+    top: 70%;
+    left: 10vw;
+    width: 80vw;
+    height: 200px;
+    overflow: hidden;
+}
+
+/*自动播放*/
+.swiper2 .swiper-wrapper2 {
+    margin-left: -660px;
+    animation: swiperAnim2 6s linear infinite;
+    padding: 0;
+    width: 3000px;
+    height: 100%;
+}
+
+.swiper2 li {
+    float: left;
+    width: 200px;
+    list-style: none;
+    line-height: 200px;
+    margin-left: 20px;
+}
+
+/*动画*/
+@keyframes swiperAnim2 {
+    0% {
+        margin-left: -1320px;
+    }
+
+    100% {
+        margin-left: -220px;
+    }
+}

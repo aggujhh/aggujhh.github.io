@@ -1,0 +1,118 @@
+.music {
+    position: relative;
+    width: 100%;
+    height: 120vh;
+    color: #fff;
+}
+
+.music_imgs {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 0 auto;
+    top: 28vh;
+    gap: 1.5em;
+    width: 70vw;
+    height: 500px;
+    transition: all 1s;
+}
+
+.music_imgs:hover .music_img {
+    filter: grayscale(100%) opacity(50%);
+}
+
+.music_imgs .music_img:hover {
+    filter: grayscale(0%) opacity(100%);
+}
+
+.music_imgs:has(.music_img1:hover) {
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+}
+
+.music_imgs:has(.music_img2:hover) {
+    grid-template-columns: 1fr 3fr 1fr 1fr;
+}
+
+.music_imgs:has(.music_img3:hover) {
+    grid-template-columns: 1fr 1fr 3fr 1fr;
+}
+
+.music_imgs:has(.music_img4:hover) {
+    grid-template-columns: 1fr 1fr 1fr 3fr;
+}
+
+.music_img:nth-child(odd) {
+    transform: translateY(-16px) skew(5deg) rotate(5deg);
+}
+
+.music_img:nth-child(even) {
+    transform: translateY(16px) skew(-5deg) rotate(-5deg);
+}
+
+.music_img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+}
+
+.music_img>p {
+    cursor: pointer;
+    font-weight: bold;
+    text-shadow: #271e23 1px 1px, rgba(0, 0, 0, 0.5)3px 3px 3px;
+    /* white-space: nowrap; */
+}
+
+.music_img img { 
+    display:none; 
+    height: 20px;
+    vertical-align: -3px; 
+}
+.music_imgs:hover .music_img img {
+    display:inline-block; 
+}
+.music_imgs .music_img img:hover {
+    display:none; 
+}
+.music_img:nth-child(odd)>p {
+    transform: skew(-5deg) rotate(-5deg);
+}
+
+.music_img:nth-child(even)>p {
+    transform: skew(5deg) rotate(5deg);
+}
+
+.music_img>p:hover {
+    letter-spacing: 5px;
+    transition: 1s;
+    line-height: 60px;
+}
+
+.music_img1 {
+    background-image: url("../img/movie_img1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 40% center;
+}
+
+.music_img2 {
+    background-image: url("../img/movie_img2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 60% center;
+}
+
+.music_img3 {
+    background-image: url("../img/movie_img3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 10% center;
+}
+
+.music_img4 {
+    background-image: url("../img/movie_img4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 30% center;
+}
