@@ -1,1 +1,777 @@
-<h1>Hellio Github</h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/music.css">
+    <link rel="stylesheet" href="css/illustration.css">
+    <link rel="stylesheet" href="css/performance.css">
+    <link rel="stylesheet" href="css/thoughts.css">
+    <link rel="stylesheet" href="css/snow.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <!-- 在HTML文件中引入jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <!-- 引入GSAP动画库 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+    <!-- 引入Lettering.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.2/velocity.ui.min.js"></script>
+    <script src="https://rawcdn.githack.com/akzhy/Vara/c55a1b40c15b808cdd4a047de95c905094be87db/src/vara.min.js">
+    </script>
+
+</head>
+
+<body>
+
+    <section id="showcase" class="showcase">
+        <header>
+            <div class="logo">
+                <img src="img/logo.png">
+            </div>
+            <div class="toggle"></div>
+        </header>
+        <video id="myVideo" src="video/Bocchi the Rock e.mp4" autoplay loop muted controls></video>
+        <div class="overlay"></div>
+        <div class="text">
+            <h1>
+                <span class="title">BOCCHI</span>
+                <span class="title">THE</span>
+                <span class="title">ROCK !</span>
+            </h1>
+        </div>
+        <a href="#" class="join">JOIN NOW!</a>
+        <button class="custom-mute-button" onclick="toggleMute()"></button>
+    </section>
+    <div class="menu">
+        <ul>
+            <li><a href="#showcase">Top</a></li>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#character">Character</a></li>
+            <li><a href="#cast&Staff">Cast&Staff</a></li>
+            <li><a href="#movie">Movie</a></li>
+            <li><a href="#music">Music</a></li>
+            <li><a href="#illustration">Illustration</a></li>
+            <li><a href="#performance">Performance</a></li>
+            <li><a href="#mythough">MyThough</a></li>
+        </ul>
+    </div>
+    <div class="null"></div>
+    <section id="introduction" class="introduction">
+        <img src="img/station.png" class="background">
+        <img src="img/people.png" class="people">
+        <img src="img/platform.png" class="platform">
+        <h2 class="intro">introduction</h2>
+        <div class="overlay2"></div>
+        <P>“ぼっちちゃん”こと後藤ひとりは会話の頭に必ず「あっ」って付けてしまう極度の人見知りで陰キャな少女。<br><br> そんな自分でも輝けそうなバンド活動に憧れギターを始めるも友達がいないため、
+            一人で毎日6時間ギターを弾く中学生時代を過ごすことに。<br><br> 上手くなったギターの演奏動画を“ギターヒーロー”としてネットに投稿したり文化祭ライブで活躍したりする
+            妄想なんかをしていると、気づいたときにはバンドメンバーを見つけるどころか 友達が一人も出来ないまま高校生になっていた……！<br><br>
+            ひきこもり一歩手前の彼女だったがある日“結束バンド”でドラムをやっている伊地知虹夏に 声をかけられたことで、そんな日常がほんの少しずつ変わっていく――</P>
+    </section>
+    <section id="character" class="character">
+        <div class="left_curtain"></div>
+        <div class="right_curtain"></div>
+        <h2 class="character_title">character</h2>
+        <img src="img/stage.png" class="stage">
+        <img src="img/liang.png" class="liang">
+        <img src="img/bochi.png" class="bochi">
+        <img src="img/hongxia.png" class="hongxia">
+        <img src="img/kita.png" class="kita">
+    </section>
+
+    <div class="pink">
+        <div class="img1"></div>
+        <div class="text">
+            <P class="romaji">GOTOH HITORI</P>
+            <h3>後藤ひとり <span> Guitar</span></h3>
+            <p class="cv"><span>CV</span> 青山吉能</p>
+            <P class="syokai">
+                バンドのリードギター担当。中学一年のころ、テしビで大人気バンドの「バンドは陰キヤでも輝けるんで」というインタビューに触発されてギターを始める。父親のギターを借りて、毎日6時間の練習をしたこともあり腕前はかなり上達したが、極度の人見知りで陰キャな性格のためバンド活動ができずに年月を過ごす。高校は自分のことを知っている人がいないという理由で、自宅から2時間かかる都内の高校に進学。心機一転、ギター好きをアピールして友達を作ろうとするが、空回りして失敗に終わってしまう。公園で落ち込んでいたところ、偶然通りかかった伊地知虹夏に声をかけられ、サボートギターとして「結束バンド」に参加し、その後正式メンバーとして加入することになった。
+            </P>
+            <img src="img/voice.png" onclick="audioPlay1()">
+            <audio src="video/bocchi.aac" class="myAudio1"></audio>
+        </div>
+    </div>
+    <div class="yellow">
+        <div class="img2"></div>
+        <div class="text">
+            <P class="romaji">IJICHI NIJIKA</P>
+            <h3>伊地知虹夏 <span> Drums</span></h3>
+            <p class="cv"><span>CV</span> 鈴代紗弓</p>
+            <P class="syokai">
+                バンドのリーダー兼ドラム。姉が経営するライブハウス「STARRY」を手伝う傍ら、自身の夢を叶えるために親友のリョウを誘ってバンド活動を始め、ひとりと郁代が加入してから本格的にライブを行っていくようになった。バンド活動にハマったのは、小さい頃に母
+                親を亡くし、父親も不在がちで寂しく過ごしていたところ、姉がライブハウスに連れていってくれたのがきっかけ。姉がバンドを辞めて、ライブハウスを始めたのは、自分のためだと感じていて、そんな姉の分まで人気のあるバンドになり、「STARRY」をもっと有名にすることが今の夢となっている。
+            </P>
+            <img src="img/voice.png" onclick="audioPlay2()">
+            <audio src="video/nijika.aac" class="myAudio2"></audio>
+        </div>
+    </div>
+    <div class="blue">
+        <div class="img3"></div>
+        <div class="text">
+            <P class="romaji">YAMADA RYO</P>
+            <h3>山田リョウ<span> Bass</span></h3>
+            <p class="cv"><span>CV</span> 水野 朔</p>
+            <P class="syokai">
+                バンドのベース担当。中学時代は別のバンドに入っていたが、途中で音楽の方向性が変わってしまったために脱退。バンドそのものが嫌になりかけたところ、親友の虹夏に誘われてもう一度やってみようと思い直し、2人で「結束バンド」を結成する。バンドでは作曲も担当していて、作詞担当のひとりにアドバイスもしている。趣味はさまざまなジャンルの音楽鑑賞や、1人での服屋や飲食店を巡り。また、お小遣いを楽器につぎ込むことがあり、裕福な家庭で暮らしているが常に金欠状態になっている。そのため人にお金を借りたり、空腹を紛らわすために草を食べることも。
+            </P>
+            <img src="img/voice.png" onclick="audioPlay3()">
+            <audio src="video/ryo.mp3" class="myAudio3"></audio>
+        </div>
+    </div>
+    <div class="red">
+        <div class="img4"></div>
+        <div class="text">
+            <P class="romaji">KITA IKUYO</P>
+            <h3>喜多郁代<span> Guitar&Vocal</span></h3>
+            <p class="cv"><span>CV</span> 長谷川育美</p>
+            <P class="syokai">
+                バンドのギター、ボーカル担当。性格はとても社交的で、友達と遊んだ写真をイソスタによくアップする陽キヤ。リョウに憧れを抱いていて、ギターを弾けないことを隠したままバンドに加入。ライブまでに必死に練習するも、ギターと間違えて多弦ベースを買っていたこともあり上手く弾けず、ライブ当日に逃げ出してしまう。その後、同じ学校のひとりにギターを教えてもらおうとついて行ったところ、虹夏に見つかってしまい事情を説明し
+                て謝罪する。罪滅ぼしとしてライブ八ウスで働いたあと皆の前から去ろうとするが、ひとりたちの説得によって、あらためてバンドに加入した。
+            </P>
+            <img src="img/voice.png" onclick="audioPlay4()">
+            <audio src="video/ikuyo.aac" class="myAudio4"></audio>
+        </div>
+    </div>
+    <section id="cast&Staff" class="cast">
+        <h2 class="staff_title">CAST&STAFF</h2>
+        <div class="overlay3"></div>
+        <div id="fly-in">
+            <div>原 作</div>
+            <div>はまじあき(芳文社)<span>「まんがタイムきららMAX」連載中</span></div>
+            <div>C A S T</div>
+            <div>青山 吉能<span>後藤 ひとり</span></div>
+            <div>鈴代 紗弓<span>伊地知 虹夏</span></div>
+            <div>山田 リョウ<span>水野 朔</span></div>
+            <div>長谷川 育美<span>喜多 郁代</span></div>
+            <div>S T A F F</div>
+        </div>
+        <div class="container">
+            <div class="end-credits">
+                <dl class="crew">
+                    <dt>監 督</dt>
+                    <dd>斎藤 圭一郎</dd>
+                    <dt>シリーズ構成・脚本</dt>
+                    <dd>吉田 恵里香</dd>
+                    <dt>キャラクターデザイン・総作画監督</dt>
+                    <dd>けろりら</dd>
+                    <dt>副 監督</dt>
+                    <dd>山本 ゆうすけ</dd>
+                    <dt>ライブディレクター</dt>
+                    <dd>川上 雄介</dd>
+                    <dt>ライブアニメーター</dt>
+                    <dd>伊藤 優希</dd>
+                    <dt>プロップデザイン</dt>
+                    <dd>永木 歩実</dd>
+                    <dt>2Dワークス</dt>
+                    <dd>梅 木葵</dd>
+                    <dt>色彩 設計</dt>
+                    <dd>横田 明日香</dd>
+                    <dt>美術 監督</dt>
+                    <dd>守安 靖尚</dd>
+                    <dt>美術 設定</dt>
+                    <dd>taracod</dd>
+                    <dt>撮影 監督</dt>
+                    <dd>金森 つばさ</dd>
+                    <dt>CGディレクター</dt>
+                    <dd>宮地 克明</dd>
+                    <dt>ライブCGディレクター</dt>
+                    <dd>内田 博明</dd>
+                    <dt>編 集</dt>
+                    <dd>平木 大輔</dd>
+                    <dt>音 楽</dt>
+                    <dd>菊谷 知樹</dd>
+                    <dt>音響 監督</dt>
+                    <dd>藤田 亜紀子</dd>
+                    <dt>音響 効果</dt>
+                    <dd>八十 正太</dd>
+                    <dt>制 作</dt>
+                    <dd>CloverWorks</dd>
+                </dl>
+            </div>
+        </div>
+        <div class="cast_staff">
+            <div class="cast2">
+                <div>原 作</div>
+                <div>はまじあき(芳文社)<span>「まんがタイムきららMAX」連載中</span></div>
+                <div>C A S T</div>
+                <div>青山 吉能<span>後藤 ひとり</span></div>
+                <div>鈴代 紗弓<span>伊地知 虹夏</span></div>
+                <div>山田 リョウ<span>水野 朔</span></div>
+                <div>長谷川 育美<span>喜多 郁代</span></div>
+            </div>
+            <div class="staff2">
+                <div>S T A F F</div>
+                <dl>
+                    <dt>監 督</dt>
+                    <dd>斎藤 圭一郎</dd>
+                </dl>
+                <dl>
+                    <dt>シリーズ構成・脚本</dt>
+                    <dd>吉田 恵里香</dd>
+                </dl>
+                <dl>
+                    <dt>キャラクターデザイン・総作画監督</dt>
+                    <dd>けろりら</dd>
+                </dl>
+                <dl>
+                    <dt>副 監督</dt>
+                    <dd>山本 ゆうすけ</dd>
+                </dl>
+                <dl>
+                    <dt>ライブディレクター</dt>
+                    <dd>川上 雄介</dd>
+                </dl>
+                <dl>
+                    <dt>ライブアニメーター</dt>
+                    <dd>伊藤 優希</dd>
+                </dl>
+                <dl>
+                    <dt>プロップデザイン</dt>
+                    <dd>永木 歩実</dd>
+                </dl>
+                <dl>
+                    <dt>2Dワークス</dt>
+                    <dd>梅 木葵</dd>
+                </dl>
+                <dl>
+                    <dt>色彩 設計</dt>
+                    <dd>横田 明日香</dd>
+                </dl>
+                <dl>
+                    <dt>美術 監督</dt>
+                    <dd>守安 靖尚</dd>
+                </dl>
+                <dl>
+                    <dt>美術 設定</dt>
+                    <dd>taracod</dd>
+                </dl>
+                <dl>
+                    <dt>撮影 監督</dt>
+                    <dd>金森 つばさ</dd>
+                </dl>
+                <dl>
+                    <dt>CGディレクター</dt>
+                    <dd>宮地 克明</dd>
+                </dl>
+                <dl>
+                    <dt>ライブCGディレクター</dt>
+                    <dd>内田 博明</dd>
+                </dl>
+                <dl>
+                    <dt>編 集</dt>
+                    <dd>平木 大輔</dd>
+                </dl>
+                <dl>
+                    <dt>音 楽</dt>
+                    <dd>菊谷 知樹</dd>
+                </dl>
+                <dl>
+                    <dt>音響 監督</dt>
+                    <dd>藤田 亜紀子</dd>
+                </dl>
+                <dl>
+                    <dt>音響 効果</dt>
+                    <dd>八十 正太</dd>
+                </dl>
+                <dl>
+                    <dt>制 作</dt>
+                    <dd>CloverWorks</dd>
+                </dl>
+            </div>
+        </div>
+    </section>
+    <section id="movie" class="movie">
+        <h2 class="movie_title">MOVIE</h2>
+        <h3 class="movie_title_text">個人的に面白いと感じるMOD</h3>
+        <div class="carousel">
+            <ul class="carousel_imgs">
+                <li class="carousel_img1"></li>
+                <li class="carousel_img2"></li>
+                <li class="carousel_img3"></li>
+                <li class="carousel_img4"></li>
+                <li class="carousel_img5"></li>
+                <li class="carousel_img6"></li>
+            </ul>
+            <ul class="bold_dot">
+                <li class="dot"></li>
+                <li class="dot"></li>
+                <li class="dot"></li>
+                <li class="dot"></li>
+                <li class="dot"></li>
+                <li class="dot"></li>
+            </ul>
+            <div class="carousel_button">
+                <div class="carousel_button_left"> &lt</div>
+                <div class="carousel_button_right">&gt</div>
+            </div>
+            <div class="play_button"></div>
+            <div class="close_button"></div>
+            <iframe class="movie1" width="560" height="315"
+                src="https://www.youtube.com/embed/KvX41LlLzLA?si=8NBMUW9MC0BSi2vs" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            <iframe class="movie2" width="560" height="315"
+                src="https://www.youtube.com/embed/GEMkX7lhFXM?si=xwjJGwOZnvyv5LXB" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            <iframe class="movie3" width="560" height="315"
+                src="https://www.youtube.com/embed/pLov30zlTzk?si=hmKQKxmIrRJ74OBv" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            <iframe class="movie4" width="560" height="315"
+                src="https://www.youtube.com/embed/IxPH7x3eP9M?si=KcXMQqe9rkYTDe7h" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            <iframe class="movie5" width="560" height="315"
+                src="https://www.youtube.com/embed/UVENMkobUys?si=yOMbBDJRlKJXX9lq" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            <iframe class="movie6" width="560" height="315"
+                src="https://www.youtube.com/embed/KvX41LlLzLA?si=8NBMUW9MC0BSi2vs" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+        <div class="movie_name">
+            <ul>
+                <li class="n">「MOD」Night Diver</li>
+                <li class="n">「勘違い系MOD」You are merely a Dream</li>
+                <li class="n">「勘違い系MOD」Deadly Guitar</li>
+                <li class="n">「MOD」Cyberpunk: The Lone Wanderer</li>
+                <li class="n">「勘違い系MOD」もしも宿儺を結束バンドに勧誘したら</li>
+                <li class="n">「MOD」Night Diver</li>
+            </ul>
+        </div>
+
+    </section>
+    <section id="music" class="music">
+        <h2 class="music_title">MUSIC</h2>
+        <div class="music_imgs">
+            <div class="music_img music_img1">
+                <p class="music_switch">青春コンプレックス <img class="music_switch_img" src="img/voice2.png"></p>
+                <p class="music_switch">ひとりぼっち東京 <img class="music_switch_img" src="img/voice2.png"></p>
+                <p class="music_switch">Distortion‼ <img class="music_switch_img" src="img/voice2.png"></p>
+                <p class="music_switch">ひみつ基地 <img class="music_switch_img" src="img/voice2.png"></p>
+            </div>
+            <div class="music_img music_img2">
+                <p class="music_switch">ギターと孤独と蒼い惑星 <img class="music_switch_img" src="img/voice2.png"></p>
+                <p class="music_switch">ラブソングが歌えない <img class="music_switch_img" src="img/voice2.png"></p>
+                <p class="music_switch">あのバンド <img class="music_switch_img" src="img/voice2.png"></p>
+            </div>
+            <div class="music_img music_img3">
+                <p class="music_switch">カラカラ <img class="music_switch_img" src="img/voice2.png"></p>
+                <p class="music_switch">小さな海 <img class="music_switch_img" src="img/voice2.png"></p>
+                <p class="music_switch">なにが悪い <img class="music_switch_img" src="img/voice2.png"></p>
+            </div>
+            <div class="music_img music_img4">
+                <p class="music_switch">忘れてやらない <img class="music_switch_img" src="img/voice2.png"></p>
+                <p class="music_switch">星座になれたら <img class="music_switch_img" src="img/voice2.png"></p>
+                <p class="music_switch">フラッシュバッカー <img class="music_switch_img" src="img/voice2.png"></p>
+                <p class="music_switch">転がる岩、君に朝が降る <img class="music_switch_img" src="img/voice2.png"></p>
+            </div>
+        </div>
+        <audio src="" class="myMusic"></audio>
+    </section>
+    <section id="illustration" class="illustration">
+        <h2 class="illustration_title">ILLUSTRATION</h2>
+        <div class="click">
+            <p>CLICK</p>
+            <img src="img/click.png">
+        </div>
+        <div class="illustration_images">
+            <div class="illustration_img illustration_img1">
+                <div></div>
+            </div>
+            <div class="illustration_img illustration_img2">
+                <div></div>
+            </div>
+            <!-- <div class="illustration_img illustration_img3">
+                <div></div> -->
+            <!-- </div> -->
+            <div class="illustration_img illustration_img4">
+                <div></div>
+            </div>
+            <div class="illustration_img illustration_img5">
+                <div></div>
+            </div>
+            <div class="illustration_img illustration_img6">
+                <div></div>
+            </div>
+            <div class="illustration_img illustration_img7">
+                <div></div>
+            </div>
+            <div class="illustration_img illustration_img8">
+                <div></div>
+            </div>
+            <div class="illustration_img illustration_img9">
+                <div></div>
+            </div>
+            <div class="illustration_img illustration_img10">
+                <div></div>
+            </div>
+            <div class="illustration_img illustration_img11">
+                <div></div>
+            </div>
+            <div class="illustration_img illustration_img12">
+                <div></div>
+            </div>
+            <!-- <div class="illustration_img illustration_img13">
+                <div></div>
+            </div> -->
+            <div class="illustration_img illustration_img14">
+                <div></div>
+            </div>
+            <div class="illustration_img illustration_img15">
+                <div></div>
+            </div>
+            <!-- <div class="illustration_img illustration_img16">
+                <div></div> -->
+            <!-- </div> -->
+            <div class="illustration_img illustration_img17">
+                <div></div>
+            </div>
+            <div class="illustration_img illustration_img18">
+                <div></div>
+            </div>
+        </div>
+        <div class="floor"></div>
+    </section>
+    <section id="performance" class="performance">
+        <h2 class="performance_title">PERFORMANCE</h2>
+        <div class="face">
+            <img src="img/顔.png">
+            <img class="glasses" alt="Klaus's infamous yellow glasses"
+                src="https://kibbles.klausapp.com/assets/img/loader/glasses-regular.svg" width="140" />
+            <img class="glasses" alt="Deal-with-it meme glasses, pixelated"
+                src="https://kibbles.klausapp.com/assets/img/loader/glasses-deal-with-it.svg" width="140" />
+            <img class="glasses" alt="Two pulsing for eyes"
+                src="https://kibbles.klausapp.com/assets/img/loader/glasses-hearts.svg" width="140" />
+            <img class="glasses" alt="Two pulsing stars for eyes"
+                src="https://kibbles.klausapp.com/assets/img/loader/glasses-stars.svg" width="140" />
+        </div>
+        <p class="face_title">ぽっち<span1>ちゃん</span1><br>の<span2>顔</span2>劇場</p>
+        <div class="swiper">
+            <ul class="swiper-wrapper">
+                <li><img src="img/005.gif"></li>
+                <li><img src="img/001.gif"></li>
+                <li><img src="img/002.gif"></li>
+                <li><img src="img/003.gif"></li>
+                <li><img src="img/004.gif"></li>
+                <li><img src="img/005.gif"></li>
+                <li><img src="img/001.gif"></li>
+                <li><img src="img/002.gif"></li>
+                <li><img src="img/003.gif"></li>
+                <li><img src="img/004.gif"></li>
+                <li><img src="img/005.gif"></li>
+            </ul>
+        </div>
+        <div class="swiper2">
+            <ul class="swiper-wrapper2">
+                <li><img src="img/010.gif"></li>
+                <li><img src="img/006.gif"></li>
+                <li><img src="img/007.gif"></li>
+                <li><img src="img/008.gif"></li>
+                <li><img src="img/009.gif"></li>
+                <li><img src="img/010.gif"></li>
+                <li><img src="img/006.gif"></li>
+                <li><img src="img/007.gif"></li>
+                <li><img src="img/008.gif"></li>
+                <li><img src="img/009.gif"></li>
+                <li><img src="img/010.gif"></li>
+            </ul>
+        </div>
+    </section>
+    <section id="mythough" class="thoughts">
+        <h2 class="thoughts_title">MY THOUGHTS</h2>
+        <div class="book">
+            <div class="first paper">
+                <div class="page front contents">
+                    <div class="intro">
+                        <h2>アニメについて<br>自分の見解を述べる</h2>
+                    </div>
+                </div>
+                <div class="page back">
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                </div>
+            </div>
+            <div class="second paper">
+                <div class="page front contents">
+                    <div id="vara-container">
+                        <div id="typedtext1"></div>
+                    </div>
+                </div>
+                <div class="page back">
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                </div>
+            </div>
+            <div class="third paper">
+                <div class="page front contents">
+                    <div id="vara-container2">
+                        <div id="typedtext2"></div>
+                    </div>
+                </div>
+                <div class="page back">
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                </div>
+            </div>
+            <div class="fourth paper">
+                <div class="page last front contents">
+                    <div id="vara-container3">
+                        <div id="typedtext3"></div>
+                    </div>
+                </div>
+                <!-- <div class="page back">
+                </div> -->
+            </div>
+            <div class="side"></div>
+            <div class="bottom"></div>
+            <div class="shadow"></div>
+        </div>
+
+    </section>
+    <footer>
+        <div class="footer_bg_img"></div>
+        <div class="footer_bg_color"></div>
+        <a class="website" href="https://bocchi.rocks/" title="サイドページへ"></a>
+        <a class="twitter" href="https://twitter.com/guitarhero_0221" title="ギターヒーローのTwitter"></a>
+        <a class="go_top" href="#showcase" >TOPへ</a>
+        <small>&copy; 2024 WF18 CHEN</small>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/music.js"></script>
+    <script src="js/illustration.js"></script>
+    <script src="js/thoughts.js"></script>
+</body>
+
+</html>
