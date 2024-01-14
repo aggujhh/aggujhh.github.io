@@ -1,3 +1,5 @@
+
+
 // 检测元素是否进入视口的方法
 const observer1 = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -81,10 +83,27 @@ let intro = document.querySelector(".intro")
 window.addEventListener('scroll', function () {
     var value = window.scrollY;
     people.style.left = -(value - 300) * 0.3 + 'px';
-    people.style.top = -(value - 630) * 0.5 + 'px';
-    platform.style.top = -(value - 600) * 0.5 + 'px';
+    // people.style.top = -(value - 630) * 0.5 + 'px';
+    // platform.style.top = -(value - 600) * 0.5 + 'px';
     intro.style.top = (value - 530) * 1.5 + 'px';
 })
+
+window.addEventListener('scroll', function () {
+    var intro = document.querySelector('.introduction');
+    var background = document.querySelector('.background');
+
+    // 获取元素相对于视窗的位置
+    var rect = intro.getBoundingClientRect();
+
+    if (rect.bottom < 0) {
+        // 当'.introduction'滚动到视窗上方时
+        background.style.position = 'absolute';
+    } else {
+        // 当'.introduction'在视窗内时
+        background.style.position = 'fixed';
+    }
+});
+
 
 let left_curtain = document.querySelector(".left_curtain");
 let right_curtain = document.querySelector(".right_curtain");
@@ -221,7 +240,7 @@ $(document).ready(function () {
     function startEndCreditsAnimation() {
         $(".end-credits")
             .velocity({ translateY: "-450%" }, {
-                duration: 10000,
+                duration: 3000,
                 easing: "linear",
             })
             .velocity({ opacity: 0 }, {
@@ -236,7 +255,7 @@ $(document).ready(function () {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 // 当触发器元素进入视口时，启动动画
-                setTimeout(startEndCreditsAnimation, 31000);
+                setTimeout(startEndCreditsAnimation, 8000);
                 // (可选) 取消观察，如果只想动画执行一次
                 observer3.unobserve(entry.target);
             }

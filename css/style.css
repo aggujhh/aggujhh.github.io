@@ -131,7 +131,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 0;
+    z-index: 2;
 }
 
 .menu li {
@@ -143,6 +143,7 @@ body {
     color: #111;
     font-weight: bold;
 }
+
 @keyframes shine {
     from {
         -webkit-mask-position: 150%;
@@ -309,15 +310,17 @@ video::-webkit-media-controls-panel {
 }
 
 .null {
+    position: relative;
     height: 100vh;
     width: 100%;
     background: #fff;
+    z-index: 1;
 }
 
 .introduction {
     position: relative;
     width: 100%;
-    height: 180vh;
+    height: 200vh;
     overflow: hidden;
     /* 超出部分将被隐藏 */
     display: flex;
@@ -330,11 +333,11 @@ video::-webkit-media-controls-panel {
 .overlay2 {
     content: "";
     position: absolute;
-    bottom: 0;
+    bottom: 70vh;
     width: 100%;
-    height: 50%;
+    height: 35vh;
     background: linear-gradient(to top,
-            #0a2a43,
+            #111 30%,
             transparent);
     /*创建了一个从下到上线性渐变,从深蓝色逐渐过渡到透明。*/
     z-index: 99;
@@ -381,16 +384,20 @@ video::-webkit-media-controls-panel {
     z-index: 2;
 }
 
+.introduction .background{
+    position: fixed;
+}
+
 .introduction p {
     position: absolute;
-    padding: 50px;
+    padding: 0 130px;
     bottom: 0;
-    right: 60px;
     color: #fff;
-    background: rgba(0, 0, 0, 0.6);
+    background: #111;
     font-size: 1.2rem;
     z-index: 100;
-    width: 60%;
+    width: 100%;
+    height: 36%;
 }
 
 .scroll-snap {
@@ -455,20 +462,78 @@ video::-webkit-media-controls-panel {
     /* 初始状态为不可见 */
 }
 
+
+
+.chara:hover div {
+    filter: grayscale(100%) opacity(50%);
+}
+
+.chara div:hover {
+    filter: grayscale(0%) opacity(100%);
+    letter-spacing: 6px;
+}
+
+
+
+
+.bochi p {
+    color: #ee76b6;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.hongxia p {
+    color: #edcf5d;
+    padding-left: 72px;
+    padding-top: 10px;
+}
+
+.liang p {
+    color: #0f81ee;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.kita p {
+    color: #ed4845;
+    padding-left: 27px;
+    padding-top: 10px;
+}
+
+
 .bochi {
     position: absolute;
     bottom: 11vh;
-    right: 20vw;
+    right: 25vw;
     height: 50vh;
     transition: all 0.6s;
     z-index: 3;
-    scroll-snap-align: center;
+    /* scroll-snap-align: center; */
+}
+
+.chara_img {
+    height: 100%;
+}
+
+.hand_down{
+    position: absolute;
+    height: 30px;
+    z-index: 3;
+    top: -10vh;
+    transition: all 0.6s;
+}
+.bochi .hand_down{left: 25%;}
+.liang .hand_down{left: 25%;}
+.kita .hand_down{left: 40%;}
+.hongxia .hand_down{
+    left: 53%;
+    top: 0;
 }
 
 .liang {
     position: absolute;
     bottom: 11vh;
-    left: 36vw;
+    left: 32vw;
     height: 53vh;
     transition: all 0.6s;
     z-index: 3;
@@ -477,7 +542,7 @@ video::-webkit-media-controls-panel {
 .hongxia {
     position: absolute;
     bottom: 11vh;
-    left: 41vw;
+    left: 37vw;
     height: 53vh;
     transition: all 0.6s;
     z-index: 2;
@@ -486,7 +551,7 @@ video::-webkit-media-controls-panel {
 .kita {
     position: absolute;
     bottom: 11vh;
-    left: 54vw;
+    left: 51vw;
     height: 50vh;
     transition: all 0.6s;
     z-index: 3;
@@ -498,6 +563,40 @@ video::-webkit-media-controls-panel {
 .kita:hover {
     transform: scale(1.2) translateY(-30px);
     cursor: pointer;
+    z-index: 4;
+}
+
+.chara_img:hover~.hand_down {
+    animation: floatUpDown 2s ease-in-out infinite;
+    top: -15vh;
+}
+.hongxia .chara_img:hover~.hand_down{
+    top: -2vh;
+}
+
+.chara_bg_img{
+    position: absolute;
+    height: 60vh;
+    right: 10vh;
+    top: -10vh;
+    opacity: 0;
+    transition: 1s;
+    transform: translateX(-100%);
+    
+}
+.hongxia .chara_bg_img,
+.liang .chara_bg_img{
+    top: -7vh;
+    right: 10vw;
+}
+
+.hongxia .chara_img:hover~.hand_down{
+    top: -2vh;
+}
+.chara_img:hover~.chara_bg_img{
+    opacity: 0.7;
+    transform: translateX(0);
+    z-index: -1;
 }
 
 .pink,
@@ -508,7 +607,7 @@ video::-webkit-media-controls-panel {
     position: absolute;
     transition: opacity 1.5s ease, transform 1.5s ease;
     opacity: 1;
-    top: 280vh;
+    top: 300vh;
     right: 0;
     height: 100vh;
     width: 100%;
@@ -732,37 +831,37 @@ video::-webkit-media-controls-panel {
     opacity: 0;
     left: 10vw;
     width: 80vw;
-    animation: switch 32s linear 1;
+    animation: switch 8s linear 1;
     animation-play-state: paused;
     /* 初始时暂停动画 */
 }
 
 #fly-in div:nth-child(2) {
-    animation-delay: 4s;
+    animation-delay: 1s;
 }
 
 #fly-in div:nth-child(3) {
-    animation-delay: 8s;
+    animation-delay: 2s;
 }
 
 #fly-in div:nth-child(4) {
-    animation-delay: 12s;
+    animation-delay: 3s;
 }
 
 #fly-in div:nth-child(5) {
-    animation-delay: 16s;
+    animation-delay: 4s;
 }
 
 #fly-in div:nth-child(6) {
-    animation-delay: 20s;
+    animation-delay: 5s;
 }
 
 #fly-in div:nth-child(7) {
-    animation-delay: 24s;
+    animation-delay: 6s;
 }
 
 #fly-in div:nth-child(8) {
-    animation-delay: 28s;
+    animation-delay: 7s;
 }
 
 .container {

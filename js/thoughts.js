@@ -1,4 +1,3 @@
-
 var vara = [];
 
 vara[0] = new Vara(
@@ -68,7 +67,7 @@ var aText3 = new Array(
 
 
 
-var iSpeed = 100; // time delay of print out
+var iSpeed = 10; // time delay of print out
 var iIndex1 = 0; // start printing array at this posision
 var iIndex2 = 0; // start printing array at this posision
 var iIndex3 = 0; // start printing array at this posision
@@ -97,7 +96,7 @@ function typewriter1() {
         iIndex1++;
         if (iIndex1 != aText1.length) {
             iArrLength1 = aText1[iIndex1].length;
-            setTimeout("typewriter1()", 300);
+            setTimeout("typewriter1()", 30);
         }
     } else {
         setTimeout("typewriter1()", iSpeed);
@@ -117,7 +116,7 @@ function typewriter2() {
         iIndex2++;
         if (iIndex2 != aText2.length) {
             iArrLength2 = aText2[iIndex2].length;
-            setTimeout("typewriter2()", 300);
+            setTimeout("typewriter2()", 30);
         }
     } else {
         setTimeout("typewriter2()", iSpeed);
@@ -138,7 +137,7 @@ function typewriter3() {
         iIndex3++;
         if (iIndex3 != aText3.length) {
             iArrLength3 = aText3[iIndex3].length;
-            setTimeout("typewriter3()", 300);
+            setTimeout("typewriter3()", 30);
         }
     } else {
         setTimeout("typewriter3()", iSpeed);
