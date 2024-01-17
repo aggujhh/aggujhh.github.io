@@ -335,9 +335,9 @@ video::-webkit-media-controls-panel {
     position: absolute;
     bottom: 70vh;
     width: 100%;
-    height: 35vh;
+    height: 45vh;
     background: linear-gradient(to top,
-            #111 30%,
+            #111 35%,
             transparent);
     /*创建了一个从下到上线性渐变,从深蓝色逐渐过渡到透明。*/
     z-index: 99;
@@ -825,7 +825,7 @@ video::-webkit-media-controls-panel {
     bottom: 0;
     left: 10vw;
     width: 80%;
-    height: 98vh;
+    height: 88vh;
     background: radial-gradient(#424242, #151515);
     mix-blend-mode: overlay;
     /* pointer-events: none; */
