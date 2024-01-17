@@ -582,7 +582,7 @@ video::-webkit-media-controls-panel {
     opacity: 0;
     transition: 1s;
     transform: translateX(-100%);
-    
+    cursor: pointer;
 }
 .hongxia .chara_bg_img,
 .liang .chara_bg_img{
@@ -653,6 +653,25 @@ video::-webkit-media-controls-panel {
     color: #fff;
 }
 
+.return{
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    /* background-color: #20313f; */
+    bottom: 20px;
+    right: 20px;
+    background-image: url("../img/return1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.return:hover{
+    background-image: url("../img/return2.png");
+    transform:scaleX(1.2);
+    
+}
 .pink .text .romaji,
 .yellow .text .romaji,
 .blue .text .romaji,

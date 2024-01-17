@@ -113,8 +113,15 @@ window.addEventListener('scroll', function () {
     right_curtain.style.right = -(value - 1100) * 0.9 + 'px';
 })
 let isAnimating = false;
+const return_buttons = document.querySelectorAll('.return');
+
+
 const bochi = document.querySelector('.bochi');
 const pink = document.querySelector('.pink');
+const blue = document.querySelector('.blue');
+const yellow = document.querySelector('.yellow');
+const red = document.querySelector('.red');
+
 const character = document.querySelector('.character');
 bochi.addEventListener('click', () => {
     if (isAnimating) return;
@@ -126,19 +133,27 @@ bochi.addEventListener('click', () => {
         pink.style.display = 'block';
     });
 })
-pink.addEventListener('click', () => {
-    if (isAnimating) return;
-    isAnimating = true;
-    character.classList.toggle('active');
-    pink.classList.add('hidden');
-    setTimeout(() => {
-        isAnimating = false;
-        pink.style.display = 'none';
-    }, 500); // 确保这里的延时与CSS中的过渡时间一致
+
+return_buttons.forEach(return_button => {
+    return_button.addEventListener('click', () => {
+        if (isAnimating) return;
+        isAnimating = true;
+        character.classList.toggle('active');
+        pink.classList.remove('hidden');
+        blue.classList.remove('hidden');
+        yellow.classList.remove('hidden');
+        red.classList.remove('hidden');
+        setTimeout(() => {
+            isAnimating = false;
+            pink.style.display = 'none';
+            blue.style.display = 'none';
+            yellow.style.display = 'none';
+            red.style.display = 'none';
+        }, 500); // 确保这里的延时与CSS中的过渡时间一致
+    })
 })
 
 const liang = document.querySelector('.liang');
-const blue = document.querySelector('.blue');
 liang.addEventListener('click', () => {
     if (isAnimating) return;
     isAnimating = true;
@@ -149,19 +164,18 @@ liang.addEventListener('click', () => {
         blue.style.display = 'block';
     });
 })
-blue.addEventListener('click', () => {
-    if (isAnimating) return;
-    isAnimating = true;
-    character.classList.toggle('active');
-    blue.classList.add('hidden');
-    setTimeout(() => {
-        isAnimating = false;
-        blue.style.display = 'none';
-    }, 500); // 确保这里的延时与CSS中的过渡时间一致
-})
+// blue.addEventListener('click', () => {
+//     if (isAnimating) return;
+//     isAnimating = true;
+//     character.classList.toggle('active');
+//     blue.classList.add('hidden');
+//     setTimeout(() => {
+//         isAnimating = false;
+//         blue.style.display = 'none';
+//     }, 500); // 确保这里的延时与CSS中的过渡时间一致
+// })
 
 const hongxia = document.querySelector('.hongxia');
-const yellow = document.querySelector('.yellow');
 hongxia.addEventListener('click', () => {
     if (isAnimating) return;
     isAnimating = true;
@@ -172,19 +186,18 @@ hongxia.addEventListener('click', () => {
         yellow.style.display = 'block';
     });
 })
-yellow.addEventListener('click', () => {
-    if (isAnimating) return;
-    isAnimating = true;
-    character.classList.toggle('active');
-    yellow.classList.add('hidden');
-    setTimeout(() => {
-        isAnimating = false;
-        yellow.style.display = 'none';
-    }, 500); // 确保这里的延时与CSS中的过渡时间一致
-})
+// yellow.addEventListener('click', () => {
+//     if (isAnimating) return;
+//     isAnimating = true;
+//     character.classList.toggle('active');
+//     yellow.classList.add('hidden');
+//     setTimeout(() => {
+//         isAnimating = false;
+//         yellow.style.display = 'none';
+//     }, 500); // 确保这里的延时与CSS中的过渡时间一致
+// })
 
 const kita = document.querySelector('.kita');
-const red = document.querySelector('.red');
 kita.addEventListener('click', () => {
     if (isAnimating) return;
     isAnimating = true;
@@ -195,16 +208,16 @@ kita.addEventListener('click', () => {
         red.style.display = 'block';
     });
 })
-red.addEventListener('click', () => {
-    if (isAnimating) return;
-    isAnimating = true;
-    character.classList.toggle('active');
-    red.classList.add('hidden');
-    setTimeout(() => {
-        isAnimating = false;
-        red.style.display = 'none';
-    }, 500); // 确保这里的延时与CSS中的过渡时间一致
-})
+// red.addEventListener('click', () => {
+//     if (isAnimating) return;
+//     isAnimating = true;
+//     character.classList.toggle('active');
+//     red.classList.add('hidden');
+//     setTimeout(() => {
+//         isAnimating = false;
+//         red.style.display = 'none';
+//     }, 500); // 确保这里的延时与CSS中的过渡时间一致
+// })
 //播放声音
 function audioPlay1() {
     var audio = document.querySelector(".myAudio1");
