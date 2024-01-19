@@ -69,6 +69,10 @@
     }
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .animate {
     animation-name: fadeInUp;
     animation-duration: 2s;
@@ -384,7 +388,7 @@ video::-webkit-media-controls-panel {
     z-index: 2;
 }
 
-.introduction .background{
+.introduction .background {
     position: fixed;
 }
 
@@ -515,17 +519,27 @@ video::-webkit-media-controls-panel {
     height: 100%;
 }
 
-.hand_down{
+.hand_down {
     position: absolute;
     height: 30px;
     z-index: 3;
     top: -10vh;
     transition: all 0.6s;
 }
-.bochi .hand_down{left: 25%;}
-.liang .hand_down{left: 25%;}
-.kita .hand_down{left: 40%;}
-.hongxia .hand_down{
+
+.bochi .hand_down {
+    left: 25%;
+}
+
+.liang .hand_down {
+    left: 25%;
+}
+
+.kita .hand_down {
+    left: 40%;
+}
+
+.hongxia .hand_down {
     left: 53%;
     top: 0;
 }
@@ -570,11 +584,12 @@ video::-webkit-media-controls-panel {
     animation: floatUpDown 2s ease-in-out infinite;
     top: -15vh;
 }
-.hongxia .chara_img:hover~.hand_down{
+
+.hongxia .chara_img:hover~.hand_down {
     top: -2vh;
 }
 
-.chara_bg_img{
+.chara_bg_img {
     position: absolute;
     height: 60vh;
     right: 10vh;
@@ -584,16 +599,18 @@ video::-webkit-media-controls-panel {
     transform: translateX(-100%);
     cursor: pointer;
 }
+
 .hongxia .chara_bg_img,
-.liang .chara_bg_img{
+.liang .chara_bg_img {
     top: -7vh;
     right: 10vw;
 }
 
-.hongxia .chara_img:hover~.hand_down{
+.hongxia .chara_img:hover~.hand_down {
     top: -2vh;
 }
-.chara_img:hover~.chara_bg_img{
+
+.chara_img:hover~.chara_bg_img {
     opacity: 0.7;
     transform: translateX(0);
     z-index: -1;
@@ -653,7 +670,7 @@ video::-webkit-media-controls-panel {
     color: #fff;
 }
 
-.return{
+.return {
     position: absolute;
     height: 80px;
     width: 80px;
@@ -667,11 +684,12 @@ video::-webkit-media-controls-panel {
     cursor: pointer;
 }
 
-.return:hover{
+.return:hover {
     background-image: url("../img/return2.png");
-    transform:scaleX(1.2);
-    
+    transform: scaleX(1.2);
+
 }
+
 .pink .text .romaji,
 .yellow .text .romaji,
 .blue .text .romaji,
