@@ -13,6 +13,10 @@
     <link rel="stylesheet" href="css/snow.css">
     <link rel="stylesheet" href="css/footer.css">
     <!-- 在HTML文件中引入jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <!-- 引入GSAP动画库 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
@@ -128,7 +132,7 @@
                 バンドのリーダー兼ドラム。姉が経営するライブハウス「STARRY」を手伝う傍ら、自身の夢を叶えるために親友のリョウを誘ってバンド活動を始め、ひとりと郁代が加入してから本格的にライブを行っていくようになった。バンド活動にハマったのは、小さい頃に母
                 親を亡くし、父親も不在がちで寂しく過ごしていたところ、姉がライブハウスに連れていってくれたのがきっかけ。姉がバンドを辞めて、ライブハウスを始めたのは、自分のためだと感じていて、そんな姉の分まで人気のあるバンドになり、「STARRY」をもっと有名にすることが今の夢となっている。
             </P>
-            <img src="img/voice.png" onclick="audioPlay2()">           
+            <img src="img/voice.png" onclick="audioPlay2()">
             <audio src="video/nijika.aac" class="myAudio2"></audio>
         </div>
         <div class="return"></div>
@@ -142,7 +146,7 @@
             <P class="syokai">
                 バンドのベース担当。中学時代は別のバンドに入っていたが、途中で音楽の方向性が変わってしまったために脱退。バンドそのものが嫌になりかけたところ、親友の虹夏に誘われてもう一度やってみようと思い直し、2人で「結束バンド」を結成する。バンドでは作曲も担当していて、作詞担当のひとりにアドバイスもしている。趣味はさまざまなジャンルの音楽鑑賞や、1人での服屋や飲食店を巡り。また、お小遣いを楽器につぎ込むことがあり、裕福な家庭で暮らしているが常に金欠状態になっている。そのため人にお金を借りたり、空腹を紛らわすために草を食べることも。
             </P>
-            <img src="img/voice.png" onclick="audioPlay3()">           
+            <img src="img/voice.png" onclick="audioPlay3()">
             <audio src="video/ryo.mp3" class="myAudio3"></audio>
         </div>
         <div class="return"></div>
@@ -785,7 +789,8 @@
         <div class="footer_bg_color"></div>
         <a class="website" href="https://bocchi.rocks/" title="サイドページへ"></a>
         <a class="twitter" href="https://twitter.com/guitarhero_0221" title="ギターヒーローのTwitter"></a>
-        <a class="go_top" href="#showcase">TOPへ</a>
+        <!-- <a class="go_top" href="">TOPへ</a> -->
+        <p id="page-top"><a href="#"></a><span>↑ ↑ TOP</span></p>
         <small>&copy; 2024 WF18 CHEN</small>
     </footer>
     <script src="js/script.js"></script>
@@ -793,8 +798,9 @@
     <script src="js/music.js"></script>
     <script src="js/illustration.js"></script>
     <script src="js/thoughts.js"></script>
+    <script src="js/foot.js"></script>
     <script>
-  
+
     </script>
 </body>
 

@@ -69,9 +69,7 @@
     }
 }
 
-html {
-    scroll-behavior: smooth;
-}
+
 
 .animate {
     animation-name: fadeInUp;
